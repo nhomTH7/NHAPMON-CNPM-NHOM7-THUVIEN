@@ -19,7 +19,7 @@ def report_most_borrowed_books():
     result = cursor.fetchall()
     print("\n📌 Báo cáo sách được mượn nhiều nhất:")
     print(tabulate(result, headers=["Mã sách", "Tên sách", "Số lần mượn"], tablefmt="github"))
-    def report_top_readers():
+   def report_top_readers():
     query = """
         SELECT bd.MaBanDoc, bd.HoTen, COUNT(mt.MaBanDoc) AS SoLanMuon
         FROM MuonTra mt
@@ -33,7 +33,8 @@ def report_most_borrowed_books():
     print("\n📌 Báo cáo bạn đọc mượn nhiều nhất:")
     print(tabulate(result, headers=["Mã bạn đọc", "Họ tên", "Số lần mượn"], tablefmt="github"))
 
-    def report_damaged_lost_books():
+
+def report_damaged_lost_books():
     query = """
         SELECT s.MaSach, s.TenSach,
                SUM(CASE WHEN mt.TinhTrangTra = 'Hong' THEN 1 ELSE 0 END) AS SoLuongHong,
