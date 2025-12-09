@@ -1,5 +1,6 @@
 # Danh sách nhà sản xuất 
 nha_san_xuat = [ ]
+ feature/capnhatthongtinnhasanxuat
  # 1. Cập nhật tên nhà sản xuất
 ten_moi = input("Tên nhà sản xuất mới: ")
 if ten_moi.strip() != "":
