@@ -7,19 +7,4 @@ nha_san_xuat = [ ]
             if ten_moi.strip() != "":
                 nsx["ten_nha_sx"] = ten_moi
 
-    # 2. Cập nhật thời gian sách được xuất bản
-            thoi_gian_moi = input("Thời gian sách được xuất bản (VD: 2021): ")
-            if thoi_gian_moi.strip() != "":
-                nsx["thoi_gian_xuat_ban"] = thoi_gian_moi
-
-    # 3. Cập nhật số sách trong thư viện
-            so_sach_moi = input("Số sách của NXB có trong thư viện: ")
-            if so_sach_moi.isdigit():
-                nsx["so_sach_trong_thu_vien"] = int(so_sach_moi)
-
-            print("✔ Cập nhật thành công!\n")
-     return
-
-           print("❌ Không tìm thấy mã nhà sản xuất cần cập nhật.")
-
 
