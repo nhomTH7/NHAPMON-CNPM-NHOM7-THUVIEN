@@ -33,3 +33,15 @@ class LibraryManager:
             print("✔ Xóa bạn đọc thành công!")
         else:
             print("❌ Không tìm thấy mã bạn đọc!")
+    # 4. Tìm kiếm bạn đọc
+    # -----------------------
+    def search_reader(self, keyword):
+        print("🔎 Kết quả tìm kiếm:")
+        found = False
+        for reader in self.readers.values():
+            if keyword.lower() in reader.name.lower() or keyword in reader.reader_id:
+                print(reader)
+                found = True
+        
+        if not found:
+            print("❌ Không tìm thấy bạn đọc!")
