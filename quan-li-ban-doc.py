@@ -25,3 +25,11 @@ class LibraryManager:
         if phone: reader.phone = phone
 
         print("✔ Cập nhật thông tin thành công!")
+    # 3. Xóa bạn đọc
+    # -----------------------
+    def delete_reader(self, reader_id):
+        if reader_id in self.readers:
+            del self.readers[reader_id]
+            print("✔ Xóa bạn đọc thành công!")
+        else:
+            print("❌ Không tìm thấy mã bạn đọc!")
