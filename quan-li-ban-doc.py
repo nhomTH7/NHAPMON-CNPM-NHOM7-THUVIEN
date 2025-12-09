@@ -45,3 +45,18 @@ class LibraryManager:
         
         if not found:
             print("❌ Không tìm thấy bạn đọc!")
+    # 5. Xem lịch sử mượn trả
+    # -----------------------
+    def view_history(self, reader_id):
+        if reader_id not in self.readers:
+            print("❌ Không tìm thấy bạn đọc!")
+            return
+        
+        reader = self.readers[reader_id]
+
+        print(f"📘 Lịch sử mượn trả của {reader.name}:")
+        if not reader.borrow_history:
+            print("Không có dữ liệu!")
+        else:
+            for item in reader.borrow_history:
+                print(f"- {item}")
