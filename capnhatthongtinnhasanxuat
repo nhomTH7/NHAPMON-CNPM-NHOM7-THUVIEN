@@ -1,4 +1,14 @@
 # Danh sách nhà sản xuất mẫu
 nha_san_xuat = [ ]
+<<<<<<< HEAD
    
+=======
+# Danh sách nhà sản xuất mẫu
+nha_san_xuat = [ ]
+    # 1. Cập nhật tên nhà sản xuất
+            ten_moi = input("Tên nhà sản xuất mới: ")
+            if ten_moi.strip() != "":
+                nsx["ten_nha_sx"] = ten_moi
+
+>>>>>>> dd2499564966e2b5351451d761f773b1db052eb2
 
