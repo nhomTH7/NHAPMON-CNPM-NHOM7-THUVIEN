@@ -1,0 +1,21 @@
+import sqlite3
+from tabulate import tabulate
+
+# Kết nối database
+conn = sqlite3.connect("library.db")
+cursor = conn.cursor()
+
+
+def report_most_borrowed_books():
+    query = """
+        SELECT s.MaSach, s.TenSach, COUNT(mt.MaSach) AS SoLanMuon
+        FROM MuonTra mt
+        JOIN Sach s ON mt.MaSach = s.MaSach
+        GROUP BY s.MaSach, s.TenSach
+        ORDER BY SoLanMuon DESC
+        LIMIT 10;
+    """
+    cursor.execute(query)
+    result = cursor.fetchall()
+    print("\n📌 Báo cáo sách được mượn nhiều nhất:")
+    print(tabulate(result, headers=["Mã sách", "Tên sách", "Số lần mượn"], tablefmt="github"))
