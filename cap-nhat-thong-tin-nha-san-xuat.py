@@ -22,3 +22,10 @@ def cap_nhat_thong_tin_nsx(ma_nsx):
     tg_moi = input(f"Nhập thời gian được xuất bản (hiện tại: {nsx['thoigian_xuatban']}): ")
     if tg_moi.strip() != "":
         nsx["thoigian_xuatban"] = tg_moi
+         #CẬP NHẬT SỐ SÁCH CÓ TRONG THƯ VIỆN
+    so_sach_moi = input(f"Nhập số sách trong thư viện (hiện tại: {nsx['so_sach_trong_thuvien']}): ")
+    if so_sach_moi.strip() != "":
+        nsx["so_sach_trong_thuvien"] = int(so_sach_moi)
+
+    print("\n✅ CẬP NHẬT THÀNH CÔNG!")
+    print("Thông tin sau khi cập nhật:", nsx)
