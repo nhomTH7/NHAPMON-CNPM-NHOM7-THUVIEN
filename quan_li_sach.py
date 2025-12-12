@@ -1,3 +1,11 @@
+# ============================
+# CHƯƠNG TRÌNH QUẢN LÝ SÁCH
+# ============================
+
+# Mỗi quyển sách là 1 dict:
+# { "id": ..., "ten": ..., "tac_gia": ..., "nam": ..., "so_luong": ... }
+
+danh_sach_sach = [] 
 # Danh sách lưu sách
 books = []
 def add_book():
@@ -7,6 +15,7 @@ def add_book():
     books.append(book)
     print("✔ Đã thêm sách\n")
 
+
 def show_books():
     if not books:
         print("Không có sách nào.\n")
@@ -15,4 +24,6 @@ def show_books():
     for i, b in enumerate(books, start=1):
         print(f"{i}. {b['title']} - {b['author']}")
     print()
-  
+
+
+
