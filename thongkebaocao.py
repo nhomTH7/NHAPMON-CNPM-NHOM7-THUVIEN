@@ -72,3 +72,4 @@ def report_damaged_assets():
     result = cursor.fetchall()
     print("\n📌 Thống kê số lượng sách theo thể loại:")
     print(tabulate(result, headers=["Mã thể loại", "Tên thể loại", "Số lượng sách"], tablefmt="github"))
+
