@@ -14,3 +14,8 @@ def cap_nhat_thong_tin_nsx(ma_nsx):
     nsx = nha_san_xuat[ma_nsx]
 
     print("\n===== CẬP NHẬT THÔNG TIN NHÀ SẢN XUẤT =====")
+    #1. CẬP NHẬT TÊN NHÀ SẢN XUẤT
+    # ---------------------------------------------------
+    ten_moi = input(f"Nhập tên nhà sản xuất mới (hiện tại: {nsx['ten_nsx']}): ")
+    if ten_moi.strip() != "":
+        nsx["ten_nsx"] = ten_moi
