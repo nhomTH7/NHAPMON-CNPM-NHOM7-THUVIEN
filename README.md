@@ -11,12 +11,9 @@ Nhóm thực hiện: Nhóm 7
 
 Danh sách thành viên nhóm 7
 
-Đặng Ngọc Mĩ Nhiên
-
+Đặng Ngọc Mỹ Nhiên
 Nguyễn Phương Trà (NT)
-
 Nguyễn Thị Thùy Linh
-
 Nguyễn Thị Lan Anh
 
 2. Lý do chọn đề tài
@@ -77,9 +74,7 @@ Phù hợp với yêu cầu học tập của sinh viên
 
 5. Các chức năng chính của hệ thống
 5.1. Quản lý sách
-
-Thêm mới sách
-
+Thêm mới sach
 Cập nhật thông tin sách
 
 Xóa sách
@@ -150,12 +145,4 @@ Giao diện đơn giản, dễ sử dụng
 Đáp ứng yêu cầu của bài tập môn học
 
 Có thể mở rộng thêm các chức năng nâng cao trong tương lai
-
-9. Hướng phát triển trong tương lai
-
-Kết nối cơ sở dữ liệu (MySQL, SQLite)
-
-Xây dựng giao diện đồ họa (GUI)
-
-Phân quyền người dùng chi tiết hơn
 
