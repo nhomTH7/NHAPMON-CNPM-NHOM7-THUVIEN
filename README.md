@@ -1,4 +1,4 @@
-DỰ ÁN: HỆ THỐNG QUẢN LÝ THƯ VIỆN TRƯỜNG ĐẠI HỌC
+﻿DỰ ÁN: HỆ THỐNG QUẢN LÝ THƯ VIỆN TRƯỜNG ĐẠI HỌC
 1. Thông tin chung về dự án
 
 Tên dự án: Hệ thống Quản lý Thư viện Trường Đại học
