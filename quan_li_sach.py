@@ -25,6 +25,7 @@ def show_books():
         print(f"{i}. {b['title']} - {b['author']}")
     print()
 
+
 def delete_book():
     show_books()
     if not books:
@@ -35,3 +36,7 @@ def delete_book():
         print("✔ Đã xóa sách\n")
     except:
         print("❌ Số không hợp lệ.\n")
+
+
+
+
