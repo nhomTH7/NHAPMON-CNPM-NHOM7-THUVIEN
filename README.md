@@ -10,7 +10,6 @@ Danh sách thành viên nhóm 7
 Nguyễn Phương Trà (NT)
 Nguyễn Thị Thùy Linh
 Nguyễn Thị Lan Anh
-
 2. Lý do chọn đề tài
 Trong các trường đại học hiện nay, thư viện đóng vai trò quan trọng trong việc hỗ trợ học tập, nghiên cứu khoa học cho sinh viên và giảng viên. Tuy nhiên, việc quản lý thư viện theo cách thủ công hoặc rời rạc dễ gây ra các vấn đề như:
 Khó kiểm soát số lượng sách
