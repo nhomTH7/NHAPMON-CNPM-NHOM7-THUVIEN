@@ -26,4 +26,17 @@ def show_books():
     print()
 
 
+def delete_book():
+    show_books()
+    if not books:
+        return
+    try:
+        index = int(input("Nhập số thứ tự sách muốn xóa: "))
+        books.pop(index - 1)
+        print("✔ Đã xóa sách\n")
+    except:
+        print("❌ Số không hợp lệ.\n")
+
+
+
 
