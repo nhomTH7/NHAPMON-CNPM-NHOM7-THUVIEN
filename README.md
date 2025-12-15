@@ -78,12 +78,14 @@ Thành viên:     	Nhiệm vụ
 Nguyễn Phương Trà	cài đặt chức năng quản lí người đọc
 Nguyễn Thùy Linh	thiết kế chức năng quản lí sách
 Nguyễn Thị Lan Anh	Cập nhật thông tin nsx
-8. Kết quả đạt được
+
+9. Kết quả đạt được
 Hệ thống chạy ổn định với các chức năng cơ bản
 Giao diện đơn giản, dễ sử dụng
 Đáp ứng yêu cầu của bài tập môn học
 Có thể mở rộng thêm các chức năng nâng cao trong tương lai
-9. Hướng phát triển trong tương lai
+
+11. Hướng phát triển trong tương lai
 Kết nối cơ sở dữ liệu (MySQL, SQLite)
 Xây dựng giao diện đồ họa (GUI)
 Phân quyền người dùng chi tiết hơn
