@@ -34,26 +34,10 @@ def delete_book():
         print("✔ Đã xóa sách\n")
     except:
         print("❌ Số không hợp lệ.\n")
-def main():
-    while True:
-        print("=== QUẢN LÝ SÁCH ===")
-        print("1. Thêm sách")
-        print("2. Hiển thị sách")
-        print("3. Xóa sách")
-        print("0. Thoát")
-        choice = input("Chọn: ")
 
-        if choice == "1":
-            add_book()
-        elif choice == "2":
-            show_books()
-        elif choice == "3":
-            delete_book()
-        elif choice == "0":
-            print("Tạm biệt!")
-            break
-        else:
-            print("Lựa chọn không hợp lệ.\n")
+def search_book():
+    key = input("Nhập tên sách cần tra cứu: ").lower()
+    for b in books:
+        if key in b["ten"].lower():
+            print(b["ten"], "-", b["tac_gia"])
 
-if __name__ == "__main__":
-    main()
