@@ -26,9 +26,4 @@ def show_books():
     print()
 
 
-def search_book():
-    key = input("Nhập tên sách cần tra cứu: ").lower()
-    for b in books:
-        if key in b["ten"].lower():
-            print(b["ten"], "-", b["tac_gia"])
-    print()
+
