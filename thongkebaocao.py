@@ -19,7 +19,6 @@ def report_most_borrowed_books():
     result = cursor.fetchall()
     print("\n📌 Báo cáo sách được mượn nhiều nhất:")
     print(tabulate(result, headers=["Mã sách", "Tên sách", "Số lần mượn"], tablefmt="github"))
-
 def report_damaged_lost_books():
     query = """
         SELECT s.MaSach, s.TenSach,
@@ -33,6 +32,8 @@ def report_damaged_lost_books():
     result = cursor.fetchall()
     print("\n📌 Báo cáo sách hỏng/mất:")
     print(tabulate(result, headers=["Mã sách", "Tên sách", "Hỏng", "Mất"], tablefmt="github"))
+    
+=======
 
     #báo cáo bạn đọc mượn nhiều nhất
     def report_top_readers():
