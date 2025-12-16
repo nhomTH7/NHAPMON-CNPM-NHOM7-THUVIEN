@@ -13,3 +13,20 @@ while True:
     print("0. Thoát")
 
     chon = input("Chọn chức năng: ")
+
+     # Công việc: Mượn sách
+    if chon == "1":
+        ten = input("Nhập tên người mượn: ")
+        sach = input("Nhập tên sách: ")
+        ngay_muon = input("Nhập ngày mượn (dd/mm/yyyy): ")
+        han_tra = input("Nhập hạn trả (dd/mm/yyyy): ")
+
+        ds_muon_tra.append({
+            "ten": ten,
+            "sach": sach,
+            "ngay_muon": ngay_muon,
+            "han_tra": han_tra,
+            "ngay_tra": None
+        })
+
+        print("✅ Mượn sách thành công!")
