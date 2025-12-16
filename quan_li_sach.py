@@ -1,3 +1,4 @@
+
 # ============================
 # CHƯƠNG TRÌNH QUẢN LÝ SÁCH
 # ============================
@@ -23,7 +24,20 @@ def show_books():
     print("\nDanh sách sách:")
     for i, b in enumerate(books, start=1):
         print(f"{i}. {b['title']} - {b['author']}")
+        
+ 
+def delete_book():
+    show_books()
+    if not books:
+        return
+    try:
+        stt = int(input("Nhập số thứ tự sách cần xóa: "))
+        books.pop(stt - 1)
+        print("✔ Đã xóa sách\n")
+    except:
+        print("❌ Lỗi! Nhập sai số.\n")
     print()
+
 
 
 
