@@ -11,3 +11,8 @@ def menu():
 while True:
     menu()
     choice = input("👉 Chọn chức năng: ")
+if choice == "1":
+        print("\n📖 Quét mã QR sách")
+        book_code = scan_qr("Quet QR Sach")
+        if book_code:
+            print("✅ Mã sách:", book_code)
