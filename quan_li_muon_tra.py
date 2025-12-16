@@ -57,3 +57,27 @@ while True:
 
         if not tim_thay:
             print("❌ Không tìm thấy thông tin mượn sách!")    
+
+     # Công việc: Thống kê trong ngày
+    elif chon == "3":
+        ngay = input("Nhập ngày cần thống kê (dd/mm/yyyy): ")
+        so_muon = 0
+        so_tra = 0
+
+        for record in ds_muon_tra:
+            if record["ngay_muon"] == ngay:
+                so_muon += 1
+            if record["ngay_tra"] == ngay:
+                so_tra += 1
+
+        print(f"📊 Thống kê ngày {ngay}:")
+        print(f"➡ Số lượng mượn sách: {so_muon}")
+        print(f"➡ Số lượng trả sách: {so_tra}")
+
+    # Thoát chương trình
+    elif chon == "0":
+        print("👋 Kết thúc chương trình")
+        break
+
+    else:
+        print("❌ Lựa chọn không hợp lệ!")        
