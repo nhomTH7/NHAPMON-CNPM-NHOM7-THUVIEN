@@ -56,4 +56,24 @@ while True:
                 break
 
         if not tim_thay:
+<<<<<<< HEAD
             print("❌ Không tìm thấy thông tin mượn sách!")    
+
+     # Công việc: Thống kê trong ngày
+    elif chon == "3":
+        hom_nay = datetime.now().strftime("%d/%m/%Y")
+        so_luot_muon = 0
+        so_luot_tra = 0
+
+        for record in ds_muon_tra:
+            if record["ngay_muon"] == hom_nay:
+                so_luot_muon += 1
+            if record["ngay_tra"] == hom_nay:
+                so_luot_tra += 1
+
+        print(f"📊 Thống kê ngày {hom_nay}")
+        print(f"📘 Số lượt mượn: {so_luot_muon}")
+        print(f"📗 Số lượt trả: {so_luot_tra}")       
+=======
+            print("❌ Không tìm thấy thông tin mượn sách!")    
+>>>>>>> main

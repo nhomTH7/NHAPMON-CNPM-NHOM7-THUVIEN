@@ -1,7 +1,9 @@
+
 class LibraryManager:
     def __init__(self):
         self.readers = {}     # lưu dạng dictionary: key = reader_id
-        # -----------------------
+
+    # -----------------------
     # 1. Thêm bạn đọc
     # -----------------------
     def add_reader(self, reader_id, name, email, phone):
@@ -12,6 +14,8 @@ class LibraryManager:
         new_reader = Reader(reader_id, name, email, phone)
         self.readers[reader_id] = new_reader
         print("✔ Thêm bạn đọc thành công!")
+
+    # -----------------------
     # 2. Sửa thông tin bạn đọc
     # -----------------------
     def update_reader(self, reader_id, name=None, email=None, phone=None):
@@ -20,11 +24,16 @@ class LibraryManager:
             return
         
         reader = self.readers[reader_id]
-        if name: reader.name = name
-        if email: reader.email = email
-        if phone: reader.phone = phone
+        if name:
+            reader.name = name
+        if email:
+            reader.email = email
+        if phone:
+            reader.phone = phone
 
         print("✔ Cập nhật thông tin thành công!")
+
+    # -----------------------
     # 3. Xóa bạn đọc
     # -----------------------
     def delete_reader(self, reader_id):
@@ -33,6 +42,8 @@ class LibraryManager:
             print("✔ Xóa bạn đọc thành công!")
         else:
             print("❌ Không tìm thấy mã bạn đọc!")
+
+    # -----------------------
     # 4. Tìm kiếm bạn đọc
     # -----------------------
     def search_reader(self, keyword):
@@ -45,6 +56,8 @@ class LibraryManager:
         
         if not found:
             print("❌ Không tìm thấy bạn đọc!")
+
+    # -----------------------
     # 5. Xem lịch sử mượn trả
     # -----------------------
     def view_history(self, reader_id):
@@ -53,8 +66,8 @@ class LibraryManager:
             return
         
         reader = self.readers[reader_id]
-
         print(f"📘 Lịch sử mượn trả của {reader.name}:")
+
         if not reader.borrow_history:
             print("Không có dữ liệu!")
         else:
