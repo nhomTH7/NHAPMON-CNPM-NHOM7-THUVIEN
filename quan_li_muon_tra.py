@@ -56,6 +56,7 @@ while True:
                 break
 
         if not tim_thay:
+<<<<<<< HEAD
             print("❌ Không tìm thấy thông tin mượn sách!")    
 
      # Công việc: Thống kê trong ngày
@@ -73,3 +74,6 @@ while True:
         print(f"📊 Thống kê ngày {hom_nay}")
         print(f"📘 Số lượt mượn: {so_luot_muon}")
         print(f"📗 Số lượt trả: {so_luot_tra}")       
+=======
+            print("❌ Không tìm thấy thông tin mượn sách!")    
+>>>>>>> main
