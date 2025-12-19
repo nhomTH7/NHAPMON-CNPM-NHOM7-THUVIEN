@@ -59,7 +59,6 @@ while True:
             print("❌ Không tìm thấy thông tin mượn sách!")    
 
      # Công việc: Thống kê trong ngày
-    # ============================
     elif chon == "3":
         hom_nay = datetime.now().strftime("%d/%m/%Y")
         so_luot_muon = 0
