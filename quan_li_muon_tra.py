@@ -60,7 +60,9 @@ while True:
                 break
 
         if not tim_thay:
+
             print("Không tìm thấy thông tin mượn sách!")    
+            print("❌ Không tìm thấy thông tin mượn sách!")    
      # Công việc: Thống kê trong ngày
     elif chon == "3":
         hom_nay = datetime.now().strftime("%d/%m/%Y")
@@ -76,6 +78,7 @@ while True:
         print(f"📊 Thống kê ngày {hom_nay}")
         print(f"📘 Số lượt mượn: {so_luot_muon}")
         print(f"📗 Số lượt trả: {so_luot_tra}")       
+
         print("❌ Không tìm thấy thông tin mượn sách!")    
             # Công việc: Cập nhật số lượng sách
     elif chon == "4":
@@ -92,7 +95,5 @@ while True:
             else:
                 ds_sach[ten_sach] = so_luong_moi
                 print(" Cập nhật số lượng sách thành công!")
+            print("❌ Không tìm thấy thông tin mượn sách!")    
 
-            
-       
-    

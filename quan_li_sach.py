@@ -1,3 +1,4 @@
+
 # ============================
 # CHƯƠNG TRÌNH QUẢN LÝ SÁCH
 # ============================
@@ -23,7 +24,34 @@ def show_books():
     print("\nDanh sách sách:")
     for i, b in enumerate(books, start=1):
         print(f"{i}. {b['title']} - {b['author']}")
+        
+ 
+def delete_book():
+    show_books()
+    if not books:
+        return
+    try:
+        stt = int(input("Nhập số thứ tự sách cần xóa: "))
+        books.pop(stt - 1)
+        print("✔ Đã xóa sách\n")
+    except:
+        print("❌ Lỗi! Nhập sai số.\n")
     print()
+    def sort_books():
+     books.sort(key=lambda x: x["title"])
+    print("✔ Đã sắp xếp sách theo tên\n")
+def maintain_book():
+    show_books()
+    try:
+        idx = int(input("Chọn sách cần bảo trì: ")) - 1
+        print(f"Sách '{books[idx]['title']}' đang được bảo trì\n")
+    except:
+        print("✘ Lỗi\n")
+def inventory():
+    total = sum(b["quantity"] + b["borrowed"] for b in books)
+    print(f"Tổng số sách trong thư viện: {total}\n")
+
+
 
 
 
