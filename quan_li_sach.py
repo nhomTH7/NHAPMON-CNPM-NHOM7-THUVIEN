@@ -37,6 +37,10 @@ def delete_book():
     except:
         print("❌ Lỗi! Nhập sai số.\n")
     print()
+    def sort_books():
+     books.sort(key=lambda x: x["title"])
+    print("✔ Đã sắp xếp sách theo tên\n")
+
 
 
 
