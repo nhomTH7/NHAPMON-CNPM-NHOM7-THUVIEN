@@ -24,6 +24,10 @@ def show_books():
     for i, b in enumerate(books, start=1):
         print(f"{i}. {b['title']} - {b['author']}")
     print()
+    def sort_books():
+     books.sort(key=lambda x: x["title"])
+    print("✔ Đã sắp xếp sách theo tên\n")
+
 
 
 
