@@ -47,6 +47,9 @@ def maintain_book():
         print(f"Sách '{books[idx]['title']}' đang được bảo trì\n")
     except:
         print("✘ Lỗi\n")
+def inventory():
+    total = sum(b["quantity"] + b["borrowed"] for b in books)
+    print(f"Tổng số sách trong thư viện: {total}\n")
 
 
 
