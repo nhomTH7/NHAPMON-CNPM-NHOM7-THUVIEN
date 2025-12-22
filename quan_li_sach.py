@@ -40,6 +40,13 @@ def delete_book():
     def sort_books():
      books.sort(key=lambda x: x["title"])
     print("✔ Đã sắp xếp sách theo tên\n")
+def maintain_book():
+    show_books()
+    try:
+        idx = int(input("Chọn sách cần bảo trì: ")) - 1
+        print(f"Sách '{books[idx]['title']}' đang được bảo trì\n")
+    except:
+        print("✘ Lỗi\n")
 
 
 
