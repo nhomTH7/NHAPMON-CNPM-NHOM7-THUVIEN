@@ -30,11 +30,9 @@ def report_damaged_lost_books():
     """
     cursor.execute(query)
     result = cursor.fetchall()
-    print("\n📌 Báo cáo sách hỏng/mất:")
+    print("\n Báo cáo sách hỏng/mất:")
     print(tabulate(result, headers=["Mã sách", "Tên sách", "Hỏng", "Mất"], tablefmt="github"))
     
-=======
-
     #báo cáo bạn đọc mượn nhiều nhất
     def report_top_readers():
     query = """
@@ -47,7 +45,7 @@ def report_damaged_lost_books():
     """
     cursor.execute(query)
     result = cursor.fetchall()
-    print("\n📌 Báo cáo bạn đọc mượn nhiều nhất:")
+    print("\n Báo cáo bạn đọc mượn nhiều nhất:")
     print(tabulate(result, headers=["Mã bạn đọc", "Họ tên", "Số lần mượn"], tablefmt="github"))
  
 def report_damaged_assets():
@@ -58,7 +56,7 @@ def report_damaged_assets():
     """
     cursor.execute(query)
     result = cursor.fetchall()
-    print("\n📌 Báo cáo tài sản hư hỏng:")
+    print("\n Báo cáo tài sản hư hỏng:")
     print(tabulate(result, headers=["Mã tài sản", "Tên tài sản", "SL Hư hỏng", "Ngày phát hiện", "Ghi chú"], tablefmt="github"))
     def report_books_per_category():
     query = """
