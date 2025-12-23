@@ -1,12 +1,4 @@
-from datetime import datetime
-# Danh sách sách và số lượng
-ds_sach = {
-    "Toán": 10,
-    "Văn": 8,
-    "Python": 5
-}
-# Khởi tạo danh sách mượn trả
-ds_muon_tra = []
+
 
 while True:
     print("\n===== QUẢN LÍ MƯỢN TRẢ SÁCH =====")
@@ -56,6 +48,8 @@ while True:
                 else:
                     print(" Trả sách QUÁ hạn")
 
+ feature/quan_li_thu_vien
+                print("✅ Trả sách thành công!")
                 print("Trả sách thành công!")
                 break
 
@@ -96,4 +90,4 @@ while True:
                 ds_sach[ten_sach] = so_luong_moi
                 print(" Cập nhật số lượng sách thành công!")
             print("❌ Không tìm thấy thông tin mượn sách!")    
-
+ main
